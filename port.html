@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>practice</title>
+    <style>
+        .pic {
+            font-family: 'Times New Roman', Times, serif;
+            margin-bottom: -8px;
+            margin-left: 125px;
+
+        }
+
+        .pass {
+            margin-top: -15px;
+
+        }
+
+        body {
+            display: flex;
+
+
+
+        }
+
+        .zoro {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .zoro {
+            width: 100%;
+            height: 100%;
+            background-image: url('photos/zoro.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            position: fixed;
+            filter: blur(5px);
+            z-index: -1;
+        }
+
+        .complete {
+            display: flex;
+            padding: 0;
+            flex-direction: column;
+            justify-content: center;
+            margin: 55px 400px 55px 400px;
+            width: 500px;
+            height: 500px;
+            background: transparent;
+            background-size: cover;
+            background-repeat: no-repeat;
+            backdrop-filter: blur(10px);
+            z-index: 1;
+            position: absolute;
+            border: 2px solid black;
+
+        }
+
+        .dan {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            width: 100%;
+
+
+        }
+
+        .dan-image {
+            width: 100px;
+            border-radius: 50px;
+        }
+
+        .from {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 5px;
+            margin-top: 0px;
+
+
+        }
+
+        .first-name,
+        .second-name {
+            border: none;
+            outline-width: 2px;
+            outline-color: blue;
+            border-radius: 6px;
+            margin-top: 10px;
+            width: 250px;
+            height: 30px;
+        }
+
+        .first-name::placeholder,
+        .second-name::placeholder {
+            font-family: 'Courier New', Courier, monospace;
+            padding-left: 10px;
+        }
+
+        .password {
+            display: flex;
+            margin-left: 120px;
+
+        }
+
+        .password:hover {
+            cursor: pointer;
+            text-decoration: underline;
+        }
+
+        .submit {
+            display: flex;
+            justify-content: center;
+
+
+
+        }
+
+        button {
+            width: 100px;
+            height: 30px;
+            border-radius: 25px;
+            background-color: rgb(40, 103, 240);
+            border: 2px lab(from color l a b);
+        }
+
+        button:hover {
+            background-color: rgb(87, 136, 241);
+            cursor: grab;
+        }
+
+        button:active {
+            cursor: grabbing;
+            background-color: rgb(129, 165, 243);
+        }
+
+        .para {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="zoro">
+
+    </div>
+
+    <div class="complete">
+        <div class="dan">
+            <img class="dan-image" src="photos/dan.png">
+        </div>
+        <div>
+            <p class="para"> Login info </p>
+        </div>
+        <div>
+            <p class="pic">
+                Username
+            </p>
+        </div>
+        <div class="from">
+
+            <input class="first-name" type="text">
+        </div>
+        <div class="pass">
+            <p class="pic">
+                Password
+            </p>
+        </div>
+        <div class="from">
+            <input class="second-name" type="text">
+
+        </div>
+        <div class="password">
+            <a href="http://127.0.0.1:5501/NEWSITE/signup.html" target="_black">
+                <p> &#9737; Forgot password</p>
+            </a>
+
+        </div>
+        <div class="submit">
+            <button>
+                SUBMIT
+            </button>
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
