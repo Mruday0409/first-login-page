@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>signup</title>
+    <style>
+        .pic {
+            font-family: 'Times New Roman', Times, serif;
+            margin-bottom: -8px;
+            margin-left: 125px;
+
+        }
+
+        .pass {
+            margin-top: -15px;
+
+        }
+
+        body {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+
+
+        }
+
+        @media (max-width: 320px) {
+            .body {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+
+            }
+        }
+
+        .zoro {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .zoro {
+            width: 100%;
+            height: 100%;
+            background-image: url('photos/new.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            position: fixed;
+            filter: blur(2px);
+            z-index: -1;
+        }
+
+        .complete {
+            display: flex;
+            padding: 0;
+            flex-direction: column;
+            justify-content: center;
+            margin: 55px 400px 55px 400px;
+            width: 500px;
+            height: 500px;
+            background: transparent;
+            background-size: cover;
+            background-repeat: no-repeat;
+            backdrop-filter: blur(10px);
+            z-index: 1;
+            position: absolute;
+            border: 2px solid black;
+
+        }
+
+        .dan {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            width: 100%;
+
+
+        }
+
+        .dan-image {
+            width: 100px;
+            border-radius: 50px;
+        }
+
+        .from {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 5px;
+            margin-top: 0px;
+
+
+
+
+        }
+
+        .name-info {
+            display: flex;
+            margin-left: 123px;
+            flex-direction: row;
+            width: 75px;
+
+        }
+
+        .second,
+        .first {
+            width: 100px;
+            border: none;
+            outline-width: 2px;
+            outline-color: blue;
+            border-radius: 6px;
+            margin-top: 10px;
+
+            height: 30px;
+        }
+
+        .second {
+            margin-left: 45px;
+        }
+
+        .first-name,
+        .password {
+            border: none;
+            outline-width: 2px;
+            outline-color: blue;
+            border-radius: 6px;
+            margin-top: 10px;
+            width: 250px;
+            height: 30px;
+        }
+
+        .first-name::placeholder,
+        .password::placeholder {
+            font-family: 'Courier New', Courier, monospace;
+            padding-left: 10px;
+        }
+
+        .first::placeholder,
+        .second::placeholder {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 11px;
+            padding-left: 8px;
+        }
+
+        .password:hover {
+            cursor: pointer;
+            text-decoration: underline;
+        }
+
+        .submit {
+            display: flex;
+            justify-content: center;
+
+
+
+        }
+
+        button {
+            width: 100px;
+            height: 30px;
+            margin-top: 35px;
+            border-radius: 25px;
+            background-color: rgb(40, 103, 240);
+            border: 2px lab(from color l a b);
+        }
+
+        button:hover {
+            background-color: rgb(87, 136, 241);
+            cursor: grab;
+        }
+
+        button:active {
+            cursor: grabbing;
+            background-color: rgb(129, 165, 243);
+        }
+
+        .para {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="zoro">
+
+    </div>
+
+    <div class="complete">
+        <div class="dan">
+            <img class="dan-image" src="photos/dan.png">
+        </div>
+        <div>
+            <p class="para"> Sign Up </p>
+        </div>
+
+        <div class="from">
+
+            <input class="first-name" type="text" placeholder="Email Id">
+        </div>
+
+        <div class="name-info">
+            <div><input class="first" type="text" placeholder="First Name"></div>
+            <div><input class="second" type="text" placeholder="Second Name"></div>
+
+
+
+        </div>
+        <div class="from">
+            <input class="password" type="text" placeholder="password">
+
+        </div>
+        <div class="submit">
+            <button>
+                sign up
+            </button>
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
